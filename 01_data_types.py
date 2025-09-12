@@ -6,12 +6,13 @@ Create a float variable, and then convert it to an integer
 Print both the original variable and the converted integer.
 
 """
+#added a variable
 Alexannys_float = 12.2
-
-integer= int(Alexannys_float)
-
+#converted my float into an integer
+my_integer= int(Alexannys_float)
+#I printed both variables
 print(Alexannys_float)
-print(integer)
+print(my_integer)
 
 
 
@@ -22,12 +23,13 @@ Write code that takes a number as input and prints whether
 it's positive, negative, or zero using if-elif-else statements.
 """
 age = 10
+#I made a variable
 if age < 0:
-print( negative)
+    print("negative") #I made it print if age is less then 0
 elif age > 0:
-print(positive)
-else age = 0:
-print(zero)
+    print("positive") #age will print positive if more then
+else:
+    print("zero") #if zero it will print zero 
 
 
 
@@ -38,7 +40,15 @@ TASK 3:
 Write code that takes two numbers as input (an integer and a float), 
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
+print()
+print()
+print()
 
+
+input1 = input("give me a float :") # added an input 
+num1 = float(input1)
+
+print(type(num1))
 
 """
 TASK 4:
@@ -46,7 +56,16 @@ TASK 4:
 Create a dictionary with keys as fruit names and values as their respective quantities. 
 Then print out the quantity of one of the fruits.
 """
+my_dict = {
+     'oranges': 89, #I added the key oranges and gave it the value 89
+    'bananas': 3, #I added the key bananas and gave it the value 3
+    'apples': 10 #I added the key apples and gave it the value 10
+    }
 
+
+print('oranges')
+print('bananas')
+print('apples')
 
 """
 TASK 5:
