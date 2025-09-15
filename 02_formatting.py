@@ -4,25 +4,25 @@ Write code that checks if a user entered the correct password.
 The password should not be case sensitive
 
 """
-password ="firefly"
+password ="firefly" # this is good password
 
-you_type_pass = input("Enter your password")
+you_type_pass = input("Enter your password") # ask you to put in your password
 
 if you_type_pass.upper() == password.upper():
-    print("correct password")
+    print("correct password") # no matter what it will change your password to uppercase
 else:
-    print("your wrong")
+    print("your wrong") # if you put the wrong letters then your wrong
 
 """
 TASK 2:
 Write code that checks if a user inputs an empty string
 If the string is empty, print "invalid" otherwise print "valid"
 """
-user_input = "Not empty"
-if user_input.strip() =="":
+user_input = "Not empty" # I added a user input
+if user_input.strip() =="": # if nothing it will print invalid 
     print("invalid")
 else:
-    print("valid")
+    print("valid") # if you write anything it prints as valid!
 
 
 
@@ -58,7 +58,7 @@ The result should be rounded to the nearest tenth (1 decimal place)
 apples = 19/15
 oranges = 111/20 
 
-ap = f"result: {apples:.1f}" # added the 2f that changes the decimal place 
+ap = f"result: {apples:.1f}" # added the 1f that changes the decimal place 
 Or  = f"result: {oranges:.1f}"
 
 print(ap)
