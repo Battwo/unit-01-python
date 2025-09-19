@@ -36,10 +36,6 @@ if choice == 2:
     print(result)
 if choice == 3:
     result= Number1 * Number2 # I did multipliction if chpice is 3
-    if Number1 == 0:
-        print("you cant use zero") #stops you from Multiplying with 0
-    if Number2 == 0:
-        print("can not be zero")
     print(result)
 if choice == 4:
     result= Number1 / Number2 #if choice is equal to 4 which is Division it will divided both numbers
