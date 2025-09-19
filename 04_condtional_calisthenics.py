@@ -37,7 +37,7 @@ zone =  input("zone: ")
 if weight > 0:
  if zone == 'a': 
   print(f"your shipping cost is: ${weight * 5}")
-  if zone =='b'
+  if zone == "b"
   print(f"your shipping cost is: ${weight * 7}")
  else:
       print("error: invaled weight ")
