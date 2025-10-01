@@ -1,6 +1,12 @@
 print()
 print("welcome To your to do list!")
 
+with open("todo.txt") as file: 
+
+    contents = file.readlines()
+
+print(contents)
+
 print()
 your_list = [] # I made an empty list so that I could add more to it 
 
@@ -14,7 +20,7 @@ while True:
 
     print("\n" + "~" * 50 + "\n") #this will make space, it's there for aesthetic also to keep everything clear
 
-    question = input("would you like to add, remove a todo or clear?").strip().lower() # this question is ment for the user to pick an option
+    question = input("would you like to add, remove, clear or exit todo?").strip().lower() # this question is ment for the user to pick an option
     if question == "add":
        items = input("what would you like to add to your list") #when user types add they have the option to add anything to their list and it wass be added 
        your_list.append(items)
@@ -32,8 +38,9 @@ while True:
         your_list.clear()
         print("you have nothing in your list.") # this lets you get rid of everything in your list 
 
-
-
+    if question == "exit":
+        file.writelines(your_list)
+        break
 
  
  
