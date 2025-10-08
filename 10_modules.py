@@ -4,7 +4,9 @@ Write a Python program that prints the current folder (working directory) using 
 """
 print()
 print()
-print("----task----" )
+print("----task 1 ----" )
+print()
+print()
 
 import os
 
@@ -22,7 +24,14 @@ Task 2 (os module):
 Create a new directory called "test_folder" in the current directory.
 Then print a list of all files and directories in the current directory.
 """
+print()
+print()
+print("----task 2----" )
+print()
+print()
 
+os.mkdir("test_folder")# Make a new folder
+print(os.listdir("."))  # will print anything thats in the fail
 
 """
 Task 3 (os module):
@@ -30,6 +39,12 @@ Write a program that checks if a directory called "data" exists in the current
 working directory. If it doesn't exist, create it. If it does exist, print 
 "Directory already exists."
 """
+
+if not os.path.exists("data"): 
+    os.mkdir("data")
+else:
+    print("Directory already exists")
+
 
 
 """
