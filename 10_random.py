@@ -3,6 +3,7 @@ Task 1 (random module):
 Write a program that simulates rolling a six-sided die 10 times.
 Print each roll result.
 """
+# Import necessary module
 import random
 
 
