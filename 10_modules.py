@@ -79,15 +79,17 @@ print()
 
 
 
-# Check if there's a file named 'config.txt' in the current folder
-if os.path.isfile("config.txt"):
-    # If found, print the full path to the file
-    print("'config.txt' found at:", os.path.abspath("config.txt"))
-else:
-    # If not found, say so
-    print("'config.txt' not found.")
-print()
+# this will define the filename
+file_name = "config.txt"
 
+
+# this check if the file exists
+if os.path.isfile(file_name):
+   # this will get the absolute path
+   file_path = os.path.abspath(file_name)
+   print("File found at:", file_path)
+else:
+   print("File not found.")
 
 
 
@@ -95,12 +97,15 @@ print()
 Task 5 (sys module):
 Write a program that prints the Python version you are currently using.
 """
-print("--task 5--")
+print("------Task 5-------")
 print()
 print()
-# Print the version of Python that's running this script
+print("Python Version:")
 print(sys.version)
-print()
+
+
+print("\nVersion Info (tuple format):")
+print(sys.version_info)
 
 
 
