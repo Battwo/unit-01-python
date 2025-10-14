@@ -1,0 +1,82 @@
+"""
+Exercise 1:
+Write a Python program that prints the current date and time using the datetime module.
+"""
+print()
+print()
+print("------------task one ------------")
+print()
+print()
+from datetime import datetime #i importated datetime!! if i dont do this the code wont run 
+
+my_date = datetime.now() #this will show what the current date and time is, including the seconds 
+
+print(my_date) #this will run and print 
+
+"""
+Exercise 2:
+Write a Python program that prints the current date and time using the datetime module.
+Using the strftime function format the date in standard U.S. date format (MM/DD/YYYY)
+"""
+print()
+print()
+print("------------task two ------------")
+print()
+print()
+from datetime import datetime
+
+lovly =  datetime.now() #will give me the date time right now 
+
+fire = lovly.strftime("%m/%d/%Y") # will convert everything into this format 
+
+print( fire) #will print date in the  standard U.S. date format (MM/DD/YYYY)
+
+
+"""
+Exercise 3:
+Using the strptime function, convert two strings into dates.
+Then find the difference in days between the two.
+"""
+print()
+print()
+print("------------task three ------------")
+print()
+print()
+
+from datetime import datetime
+
+my_string = "10/03/2009" #i gave it a year 
+
+lovly_date = datetime.strptime(my_string, "%m/%d/%Y") # will convert this to a format 
+
+
+my_string2 = "09/30/2008" #repated the same proces here
+
+lovly_date2 = datetime.strptime(my_string2, "%m/%d/%Y")
+
+difference = lovly_date - lovly_date2 #this will suptract both dates and give you the distance 
+
+print(f"the difference in days between the two is : {difference.days} " )
+
+
+
+
+
+"""
+Excercise 4:
+Write a program that asks the user for their birthdate and calculates their current 
+age using the datetime module.
+"""
+from datetime import datetime
+
+birthdate = input("whens your birthdate? answer in (MM/DD/YYYY) format ") # will ask for your bithday 
+lovly_date = datetime.strptime(birthdate, "%m/%d/%Y") # will change it into the proper format 
+
+
+todays_date= datetime.now()  #gives todays date 
+crazy = todays_date.strftime("%m/%d/%Y")
+
+age= todays_date - lovly_date #will subtract the two dates 
+
+print(age) #will do its best to give u your age 
+
